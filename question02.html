@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz4_Q2</title>
+</head>
+<body>
+    <h1>JavaScript Quiz Question: 02</h1>
+    <h3>Solved By: Laraib Shaikh</h3>
+    <script>
+        // ~ 90 > A+
+        // ~ 75 > A
+        // ~ 60 > B
+        // ~ 50 > C
+        // ~ 50 < F
+
+        function Grades(marks){
+            if(marks >= 90){
+                grade = "A+";
+                return grade;
+            }
+            else if ((marks >= 75) && (marks < 90)){
+                grade = "A";
+                return grade;
+            }
+            else if ((marks >= 60) && (marks < 75)){
+                grade = "B";
+                return grade;
+            }
+            else if ((marks >= 50) && (marks < 60)){
+                grade = "C";
+                return grade;
+            }
+            else if (marks < 50){
+                grade = "F";
+                return grade;
+            }
+            else {
+                console.log("Invalid marks enetred.")
+            }
+        }
+
+        console.log("Marks = 100 then grade is: " + Grades(100));
+        console.log("Marks = 40 then grade is: " + Grades(40));
+        console.log("Marks = 70 then grade is: " + Grades(70));
+        console.log("Marks = 80 then grade is: " + Grades(80));
+        console.log("Marks = 53 then grade is: " + Grades(53));
+        
+    </script>
+</body>
+</html>
